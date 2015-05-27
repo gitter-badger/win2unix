@@ -5,6 +5,7 @@ module Win2unix
 
   def self.tidy path, ext = 'txt'
   	get_all_files path, ext
+
     @@file_list.each do |file|
       handle file
     end
@@ -25,7 +26,7 @@ module Win2unix
   end
 
   def self.handle file
-    origin = IO.read file
+    origin = IO.binread file
     handled = origin.gsub /\r\n/, "\n"
 
     f = File.new file, 'w'
