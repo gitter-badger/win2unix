@@ -20,12 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-	require 'win2unix'
+```ruby
+require 'win2unix'
 
-	Win2unix.tidy(your_path) # the ext parameter is 'txt' as default.
+Win2unix.tidy(your_path) # the ext parameter is 'txt' as default.
 
-	Win2unix.tidy(your_path, 'php')
-	Win2unix.tidy(your_path, 'txt')
+Win2unix.tidy(your_path, 'php')
+Win2unix.tidy(your_path, 'txt')
+```
 
 ## Development
 
