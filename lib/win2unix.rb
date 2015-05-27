@@ -4,7 +4,7 @@ module Win2unix
   @@file_list = []
 
   def self.tidy path, ext = 'txt'
-  	getAllFiles path, ext
+  	get_all_files path, ext
     @@file_list.each do |file|
       handle file
     end
@@ -12,10 +12,10 @@ module Win2unix
     @@file_list.size
   end
 
-  def self.getAllFiles path, ext = 'txt'
+  def self.get_all_files path, ext = 'txt'
   	Dir.glob("#{path}/*") do |file|
   	  if File.directory? file
-  		  getAllFiles file
+  		  get_all_files file
   	  else
   		  if File.extname(file) == '.' + ext
           @@file_list.push file
@@ -25,6 +25,13 @@ module Win2unix
   end
 
   def self.handle file
-    p file
+    origin = IO.read file
+    handled = origin.gsub /\r\n/, "\n"
+
+    f = File.new file, 'w'
+    f.print handled
+    f.close
   end
 end
+
+# end of this file.
