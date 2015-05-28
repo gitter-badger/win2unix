@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["liuxd"]
   spec.email         = ["liuxidong1984@gmail.com"]
 
-  spec.summary       = %q{Shift \r\n to \n}
-  spec.description   = %q{A ruby gem which can shift \r\n to \n for a folder.}
+  spec.summary       = %q{Shift \r\n to \n for a folder}
+  spec.description   = %q{A ruby gem which can replace the windows' line breaks into unix line breaks for a folder.}
   spec.homepage      = "https://github.com/liuxd/win2unix."
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
