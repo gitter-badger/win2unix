@@ -1,5 +1,7 @@
 # Win2unix
 
+[![Join the chat at https://gitter.im/liuxd/win2unix](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/liuxd/win2unix?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Gem Version](https://badge.fury.io/rb/win2unix.svg)](http://badge.fury.io/rb/win2unix)
 
 The line breaks in windows and unix are different.That's troublesome.This gem can help you to replace the windows' line breaks into unix line breaks easily.
