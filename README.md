@@ -1,5 +1,7 @@
 # Win2unix
 
+[![Gem Version](https://badge.fury.io/rb/win2unix.svg)](http://badge.fury.io/rb/win2unix)
+
 The line breaks in windows and unix are different.That's troublesome.This gem can help you to replace the windows' line breaks into unix line breaks easily.
 
 ## Installation
